@@ -1,0 +1,142 @@
+select t0.stock_id, t0.stock_name, ifnull(t20q4.fundholdrate,0) as 20Q4,
+ifnull(t20q3.fundholdrate,0) as 20Q3,
+ifnull(t20q2.fundholdrate,0) as 20Q2,
+ifnull(t20q1.fundholdrate,0) as 20Q1,
+ifnull(t19q4.fundholdrate,0) as 19Q4,
+ifnull(t19q3.fundholdrate,0) as 19Q3,
+ifnull(t19q2.fundholdrate,0) as 19Q2,
+ifnull(t19q1.fundholdrate,0) as 19Q1,
+ifnull(t18q4.fundholdrate,0) as 18Q4,
+ifnull(t18q3.fundholdrate,0) as 18Q3,
+ifnull(t18q2.fundholdrate,0) as 18Q2,
+ifnull(t18q1.fundholdrate,0) as 18Q1
+from stockdb.stockidview t0 
+left join stockdb.fundhold20q4 t20q4 on t0.stock_id = t20q4.stock_id 
+left join stockdb.fundhold20q3 t20q3 on t0.stock_id = t20q3.stock_id 
+left join stockdb.fundhold20q2 t20q2 on t0.stock_id = t20q2.stock_id 
+left join stockdb.fundhold20q1 t20q1 on t0.stock_id = t20q1.stock_id 
+left join stockdb.fundhold19q4 t19q4 on t0.stock_id = t19q4.stock_id 
+left join stockdb.fundhold19q3 t19q3 on t0.stock_id = t19q3.stock_id 
+left join stockdb.fundhold19q2 t19q2 on t0.stock_id = t19q2.stock_id 
+left join stockdb.fundhold19q1 t19q1 on t0.stock_id = t19q1.stock_id 
+left join stockdb.fundhold18q4 t18q4 on t0.stock_id = t18q4.stock_id 
+left join stockdb.fundhold18q3 t18q3 on t0.stock_id = t18q3.stock_id 
+left join stockdb.fundhold18q2 t18q2 on t0.stock_id = t18q2.stock_id 
+left join stockdb.fundhold18q1 t18q1 on t0.stock_id = t18q1.stock_id 
+
+
+create view stockdb.stockholdview as select t0.stock_id, t0.stock_name, ifnull(t20q4.fundholdrate,0) as 20Q4,
+ifnull(t20q3.fundholdrate,0) as 20Q3,
+ifnull(t20q2.fundholdrate,0) as 20Q2,
+ifnull(t20q1.fundholdrate,0) as 20Q1,
+ifnull(t19q4.fundholdrate,0) as 19Q4,
+ifnull(t19q3.fundholdrate,0) as 19Q3,
+ifnull(t19q2.fundholdrate,0) as 19Q2,
+ifnull(t19q1.fundholdrate,0) as 19Q1,
+ifnull(t18q4.fundholdrate,0) as 18Q4,
+ifnull(t18q3.fundholdrate,0) as 18Q3,
+ifnull(t18q2.fundholdrate,0) as 18Q2,
+ifnull(t18q1.fundholdrate,0) as 18Q1
+from stockdb.stockidview t0 
+left join stockdb.fundhold20q4 t20q4 on t0.stock_id = t20q4.stock_id 
+left join stockdb.fundhold20q3 t20q3 on t0.stock_id = t20q3.stock_id 
+left join stockdb.fundhold20q2 t20q2 on t0.stock_id = t20q2.stock_id 
+left join stockdb.fundhold20q1 t20q1 on t0.stock_id = t20q1.stock_id 
+left join stockdb.fundhold19q4 t19q4 on t0.stock_id = t19q4.stock_id 
+left join stockdb.fundhold19q3 t19q3 on t0.stock_id = t19q3.stock_id 
+left join stockdb.fundhold19q2 t19q2 on t0.stock_id = t19q2.stock_id 
+left join stockdb.fundhold19q1 t19q1 on t0.stock_id = t19q1.stock_id 
+left join stockdb.fundhold18q4 t18q4 on t0.stock_id = t18q4.stock_id 
+left join stockdb.fundhold18q3 t18q3 on t0.stock_id = t18q3.stock_id 
+left join stockdb.fundhold18q2 t18q2 on t0.stock_id = t18q2.stock_id 
+left join stockdb.fundhold18q1 t18q1 on t0.stock_id = t18q1.stock_id 
+
+
+
+create view stockdb.stockholdview as select t0.stock_id, t0.stock_name, ifnull(t20q4.fundholdrate,0) as 20Q4,
+ifnull(t20q3.fundholdrate,0) as 20Q3,
+ifnull(t20q2.fundholdrate,0) as 20Q2,
+ifnull(t20q1.fundholdrate,0) as 20Q1,
+ifnull(t19q4.fundholdrate,0) as 19Q4,
+ifnull(t19q3.fundholdrate,0) as 19Q3,
+ifnull(t19q2.fundholdrate,0) as 19Q2,
+ifnull(t19q1.fundholdrate,0) as 19Q1,
+ifnull(t18q4.fundholdrate,0) as 18Q4,
+ifnull(t18q3.fundholdrate,0) as 18Q3,
+ifnull(t18q2.fundholdrate,0) as 18Q2,
+ifnull(t18q1.fundholdrate,0) as 18Q1,
+ifnull(t17q4.fundholdrate,0) as 17Q4,
+ifnull(t17q3.fundholdrate,0) as 17Q3,
+ifnull(t17q2.fundholdrate,0) as 17Q2,
+ifnull(t17q1.fundholdrate,0) as 17Q1
+from stockdb.stockidview t0 
+left join stockdb.fundhold20q4 t20q4 on t0.stock_id = t20q4.stock_id 
+left join stockdb.fundhold20q3 t20q3 on t0.stock_id = t20q3.stock_id 
+left join stockdb.fundhold20q2 t20q2 on t0.stock_id = t20q2.stock_id 
+left join stockdb.fundhold20q1 t20q1 on t0.stock_id = t20q1.stock_id 
+left join stockdb.fundhold19q4 t19q4 on t0.stock_id = t19q4.stock_id 
+left join stockdb.fundhold19q3 t19q3 on t0.stock_id = t19q3.stock_id 
+left join stockdb.fundhold19q2 t19q2 on t0.stock_id = t19q2.stock_id 
+left join stockdb.fundhold19q1 t19q1 on t0.stock_id = t19q1.stock_id 
+left join stockdb.fundhold18q4 t18q4 on t0.stock_id = t18q4.stock_id 
+left join stockdb.fundhold18q3 t18q3 on t0.stock_id = t18q3.stock_id 
+left join stockdb.fundhold18q2 t18q2 on t0.stock_id = t18q2.stock_id 
+left join stockdb.fundhold18q1 t18q1 on t0.stock_id = t18q1.stock_id 
+left join stockdb.fundhold17q4 t17q4 on t0.stock_id = t17q4.stock_id 
+left join stockdb.fundhold17q3 t17q3 on t0.stock_id = t17q3.stock_id 
+left join stockdb.fundhold17q2 t17q2 on t0.stock_id = t17q2.stock_id 
+left join stockdb.fundhold17q1 t17q1 on t0.stock_id = t17q1.stock_id 
+
+# New Table From Sina
+create view stockdb.stockholdviewnew as select t0.stock_id, t0.stock_name,
+ifnull(t0.fundholdrate,0) as 20Q4,
+ifnull(t0.fundcount,0) as 20Q4Cnt,
+ifnull(t20q3.fundholdrate,0) as 20Q3,
+ifnull(t20q3.fundcount,0) as 20Q3Cnt,
+ifnull(t20q2.fundholdrate,0) as 20Q2,
+ifnull(t20q2.fundcount,0) as 20Q2Cnt,
+ifnull(t20q1.fundholdrate,0) as 20Q1,
+ifnull(t20q1.fundcount,0) as 20Q1Cnt,
+ifnull(t19q4.fundholdrate,0) as 19Q4,
+ifnull(t19q4.fundcount,0) as 19Q4Cnt,
+ifnull(t19q3.fundholdrate,0) as 19Q3,
+ifnull(t19q3.fundcount,0) as 19Q3Cnt,
+ifnull(t19q2.fundholdrate,0) as 19Q2,
+ifnull(t19q2.fundcount,0) as 19Q2Cnt,
+ifnull(t19q1.fundholdrate,0) as 19Q1,
+ifnull(t19q1.fundcount,0) as 19Q1Cnt,
+ifnull(t18q4.fundholdrate,0) as 18Q4,
+ifnull(t18q4.fundcount,0) as 18Q4Cnt,
+ifnull(t18q3.fundholdrate,0) as 18Q3,
+ifnull(t18q3.fundcount,0) as 18Q3Cnt,
+ifnull(t18q2.fundholdrate,0) as 18Q2,
+ifnull(t18q2.fundcount,0) as 18Q2Cnt,
+ifnull(t18q1.fundholdrate,0) as 18Q1,
+ifnull(t18q1.fundcount,0) as 18Q1Cnt,
+ifnull(t17q4.fundholdrate,0) as 17Q4,
+ifnull(t17q4.fundcount,0) as 17Q4Cnt,
+ifnull(t17q3.fundholdrate,0) as 17Q3,
+ifnull(t17q3.fundcount,0) as 17Q3Cnt,
+ifnull(t17q2.fundholdrate,0) as 17Q2,
+ifnull(t17q2.fundcount,0) as 17Q2Cnt,
+ifnull(t17q1.fundholdrate,0) as 17Q1,
+ifnull(t17q1.fundcount,0) as 17Q1Cnt
+from stockdb.fundhold20q4new t0
+left join stockdb.fundhold20q3new t20q3 on t0.stock_id = t20q3.stock_id
+left join stockdb.fundhold20q2new t20q2 on t0.stock_id = t20q2.stock_id
+left join stockdb.fundhold20q1new t20q1 on t0.stock_id = t20q1.stock_id
+left join stockdb.fundhold19q4new t19q4 on t0.stock_id = t19q4.stock_id
+left join stockdb.fundhold19q3new t19q3 on t0.stock_id = t19q3.stock_id
+left join stockdb.fundhold19q2new t19q2 on t0.stock_id = t19q2.stock_id
+left join stockdb.fundhold19q1new t19q1 on t0.stock_id = t19q1.stock_id
+left join stockdb.fundhold18q4new t18q4 on t0.stock_id = t18q4.stock_id
+left join stockdb.fundhold18q3new t18q3 on t0.stock_id = t18q3.stock_id
+left join stockdb.fundhold18q2new t18q2 on t0.stock_id = t18q2.stock_id
+left join stockdb.fundhold18q1new t18q1 on t0.stock_id = t18q1.stock_id
+left join stockdb.fundhold17q4new t17q4 on t0.stock_id = t17q4.stock_id
+left join stockdb.fundhold17q3new t17q3 on t0.stock_id = t17q3.stock_id
+left join stockdb.fundhold17q2new t17q2 on t0.stock_id = t17q2.stock_id
+left join stockdb.fundhold17q1new t17q1 on t0.stock_id = t17q1.stock_id
+
+查询基金持仓数量和持仓家数
+SELECT * FROM stockdb.stockholdviewnew2 where 20Q4 - 20Q3 > 1 and 20Q4Cnt >3 and 20Q4 > 2 and 20Q4Cnt> 20Q3Cnt
